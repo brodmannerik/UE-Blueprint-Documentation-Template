@@ -1,0 +1,21 @@
+.ueb-viewer {
+  margin: 2rem 0;
+  padding: 1rem;
+  background: var(--bg-secondary, #fafafa);
+  border-radius: 8px;
+  border: 1px solid var(--border-color, #e5e5e5);
+  overflow: hidden;
+}
+
+.ueb-viewer ueb-blueprint {
+  --ueb-height: 500px;
+  --ueb-width: 100%;
+  display: block;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .ueb-viewer ueb-blueprint {
+    --ueb-height: 300px;
+  }
+}
